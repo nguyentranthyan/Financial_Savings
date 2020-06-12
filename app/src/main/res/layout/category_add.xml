@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/di10dp"
+    android:background="@color/colorWhite"
+    tools:context=".controllers.mains.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/di18dp"
+        android:gravity="center|left">
+
+        <ImageButton
+            android:id="@+id/buttonCancel_category_add"
+            android:layout_width="@dimen/di25dp"
+            android:layout_height="@dimen/di25dp"
+            android:layout_marginRight="@dimen/di17dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_add"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/di20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/buttonSave_category_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/save"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/di18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/di10dp"
+        android:layout_marginTop="@dimen/di10dp">
+
+        <ImageButton
+            android:id="@+id/buttonIconCate_category_add"
+            android:layout_width="@dimen/di40dp"
+            android:layout_height="@dimen/di40dp"
+            android:layout_marginRight="@dimen/di10dp"
+            android:layout_marginTop="@dimen/di5dp"
+            android:src="@drawable/ic_help_black_24dp"
+            android:background="@drawable/border_radius_icon"/>
+
+        <EditText
+            android:id="@+id/editTextNameCate_category_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/category_name"
+            android:ems="10"
+            android:layout_marginBottom="@dimen/di15dp"
+            android:textColor="@color/colorBlack"
+            android:inputType="none" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/di10dp">
+
+        <ImageButton
+            android:id="@+id/buttonWallet"
+            android:layout_width="@dimen/di24dp"
+            android:layout_height="@dimen/di24dp"
+            android:layout_marginTop="@dimen/di12dp"
+            android:layout_marginRight="@dimen/di17dp"
+            android:layout_marginLeft="@dimen/di8dp"
+            android:background="@drawable/ic_account_balance_wallet_black_24dp"/>
+
+        <EditText
+            android:id="@+id/editTextWallet_category_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/wallet"
+            android:focusable="false"
+            android:layout_marginBottom="@dimen/di15dp"
+            android:textColor="@color/colorBlack"
+            android:inputType="none"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupCate_category_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioButton_category_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recharge_money"
+            android:checked="true"
+            android:paddingRight="@dimen/di30dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2_category_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spend_money" />
+
+    </RadioGroup>
+
+</LinearLayout>

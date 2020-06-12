@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/di10dp"
+    android:background="@color/colorWhite"
+    tools:context=".controllers.categories.HomeCateActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/di10dp"
+        android:gravity="center|left">
+
+        <ImageButton
+            android:id="@+id/buttonIconWallet_transaction_home"
+            android:layout_width="@dimen/di35dp"
+            android:layout_height="@dimen/di35dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <ImageButton
+            android:id="@+id/buttonIconDown_transaction_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/di10dp"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNameWallet_transaction_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/di15dp" />
+
+            <TextView
+                android:id="@+id/textViewMoneyWallet_transaction_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="@dimen/di20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/buttonIconFilter_transaction_home"
+                android:layout_width="@dimen/di35dp"
+                android:layout_height="@dimen/di35dp"
+                android:src="@drawable/filters"
+                android:layout_marginRight="@dimen/di15dp"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <ImageButton
+                android:id="@+id/buttonIconTime_transaction_home"
+                android:layout_width="@dimen/di35dp"
+                android:layout_height="@dimen/di35dp"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:layout_marginRight="@dimen/di15dp"
+                android:background="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di5dp"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="@dimen/di10dp"
+        android:layout_marginBottom="@dimen/di10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/di15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recharge_money"
+            android:textSize="@dimen/di15dp"/>
+
+        <TextView
+            android:id="@+id/textViewMoneyRevenue_transaction_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingRight="@dimen/di10dp"
+            android:textColor="@color/colorLightBlue"
+            android:textSize="@dimen/di17dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/di15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spend_money"
+            android:textSize="@dimen/di15dp"/>
+
+        <TextView
+            android:id="@+id/textViewMoneyExpenses_transaction_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingRight="@dimen/di10dp"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/di17dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di2dp"
+        android:background="@color/colorLightGray"
+        android:layout_marginLeft="@dimen/di230dp"
+        android:layout_marginTop="@dimen/di5dp"
+        android:layout_marginBottom="@dimen/di5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/di15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/symmetrical"
+            android:textSize="@dimen/di15dp"/>
+
+        <TextView
+            android:id="@+id/textViewMoneyTotal_transaction_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingRight="@dimen/di10dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="@dimen/di17dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/di15dp"
+        android:layout_marginTop="@dimen/di10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_display"
+            android:textSize="@dimen/di15dp"
+            android:paddingRight="@dimen/di10dp"/>
+
+        <TextView
+            android:id="@+id/textViewTime_transaction_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingRight="@dimen/di10dp"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/di17dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="@dimen/di15dp"/>
+
+    <ListView
+        android:id="@+id/listView_transaction_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

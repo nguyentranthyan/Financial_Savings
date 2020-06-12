@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView_Event"
+        android:layout_width="@dimen/di50dp"
+        android:layout_height="@dimen/di50dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/di10dp"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="@dimen/di7dp">
+
+        <TextView
+            android:id="@+id/textView_Name_Event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/di15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/di5dp"
+                android:text="@string/money_eventt"
+                android:textSize="@dimen/di12dp" />
+
+            <TextView
+                android:id="@+id/textView_Money_Event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/colorBlue"
+                android:paddingTop="@dimen/di5dp"
+                android:textSize="@dimen/di12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

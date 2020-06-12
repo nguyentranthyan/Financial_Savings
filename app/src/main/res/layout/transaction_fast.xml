@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/di10dp"
+    android:background="@color/colorWhite"
+    tools:context=".controllers.categories.HomeCateActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/di10dp"
+        android:gravity="center|left">
+
+        <ImageButton
+            android:id="@+id/buttonIconWallet_transaction_fast"
+            android:layout_width="@dimen/di35dp"
+            android:layout_height="@dimen/di35dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <ImageButton
+            android:id="@+id/buttonIconDown_transaction_fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/di10dp"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNameWallet_transaction_fast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/di15dp" />
+
+            <TextView
+                android:id="@+id/textViewMoneyWallet_transaction_fast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="@dimen/di20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/buttonIconFilter_transaction_fast"
+                android:layout_width="@dimen/di35dp"
+                android:layout_height="@dimen/di35dp"
+                android:src="@drawable/filters"
+                android:layout_marginRight="@dimen/di15dp"
+                android:background="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="@dimen/di10dp"/>
+
+    <ListView
+        android:id="@+id/listView_transaction_fast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/di10dp"
+    android:background="@color/colorWhite"
+    android:id="@+id/fragment_transaction_add"
+    tools:context=".controllers.mains.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/di18dp"
+        android:gravity="center|left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/di25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="@string/add_trans"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/buttonSave_transaction_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/save"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/di18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextMoney_transaction_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/di10dp"
+            android:ems="10"
+            android:hint="0"
+            android:maxLength="15"
+            android:textColorHint="@color/colorBlue"
+            android:textSize="@dimen/di30dp"
+            android:layout_marginLeft="@dimen/di60dp"
+            android:textColor="@color/colorBlue"
+            android:inputType="numberDecimal"
+            android:drawableLeft="@drawable/ic_attach_money_black_24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:id="@+id/buttonCate_transaction_add"
+                android:layout_width="@dimen/di40dp"
+                android:layout_height="@dimen/di40dp"
+                android:layout_marginRight="@dimen/di10dp"
+                android:layout_marginTop="@dimen/di5dp"
+                android:src="@drawable/ic_help_black_24dp"
+                android:background="@drawable/border_radius_icon"/>
+
+            <EditText
+                android:id="@+id/editTextCategory_transaction_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/category"
+                android:ems="10"
+                android:focusable="false"
+                android:layout_marginBottom="@dimen/di10dp"
+                android:textColor="@color/colorBlack"
+                android:inputType="none" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:id="@+id/buttonDate"
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginTop="@dimen/di12dp"
+                android:layout_marginRight="@dimen/di17dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:background="@drawable/ic_today_black_24dp"/>
+
+            <EditText
+                android:id="@+id/editTextDate_transaction_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/date"
+                android:focusable="false"
+                android:layout_marginBottom="@dimen/di10dp"
+                android:textColor="@color/colorBlack"
+                android:inputType="none"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:id="@+id/buttonNote"
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginTop="@dimen/di12dp"
+                android:layout_marginRight="@dimen/di17dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:background="@drawable/ic_note_black_24dp"/>
+
+            <EditText
+                android:id="@+id/editTextNote_transaction_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/note"
+                android:ems="10"
+                android:layout_marginBottom="@dimen/di10dp"
+                android:textColor="@color/colorBlack"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/di10dp"
+            android:background="@color/colorLightGray"
+            android:layout_marginBottom="@dimen/di10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:id="@+id/buttonWallet"
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginTop="@dimen/di12dp"
+                android:layout_marginRight="@dimen/di17dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:background="@drawable/ic_account_balance_wallet_black_24dp"/>
+
+            <EditText
+                android:id="@+id/editTextWallet_transaction_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/wallet"
+                android:focusable="false"
+                android:layout_marginBottom="@dimen/di10dp"
+                android:textColor="@color/colorBlack"
+                android:inputType="none"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:id="@+id/buttonSaving"
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginTop="@dimen/di12dp"
+                android:layout_marginRight="@dimen/di17dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:background="@drawable/ic_assignment_turned_in_black_24dp"/>
+
+            <EditText
+                android:id="@+id/editTextSaving_transaction_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/saving"
+                android:focusable="false"
+                android:layout_marginBottom="@dimen/di10dp"
+                android:textColor="@color/colorBlack"
+                android:inputType="none"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/di10dp"
+            android:background="@color/colorLightGray"
+            android:layout_marginBottom="@dimen/di10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:id="@+id/buttonEvent"
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginTop="@dimen/di12dp"
+                android:layout_marginRight="@dimen/di17dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:background="@drawable/ic_event_note_black_24dp"/>
+
+            <EditText
+                android:id="@+id/editTextEvent_transaction_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/event"
+                android:focusable="false"
+                android:layout_marginBottom="@dimen/di10dp"
+                android:paddingRight="@dimen/di10dp"
+                android:textColor="@color/colorBlack"
+                android:drawableRight="@drawable/ic_backspace_black_24dp"
+                android:inputType="none"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginTop="@dimen/di12dp"
+                android:layout_marginRight="@dimen/di17dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:background="@drawable/ic_baseline_access_alarm_24"/>
+
+            <EditText
+                android:id="@+id/editTextRemind_transaction_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/remind"
+                android:focusable="false"
+                android:layout_marginBottom="@dimen/di10dp"
+                android:textColor="@color/colorBlack"
+                android:inputType="none"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/di10dp"
+            android:background="@color/colorLightGray"
+            android:layout_marginBottom="@dimen/di10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di13dp"
+            android:layout_marginBottom="@dimen/di10dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxRepeat_transaction_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repeat"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageButton
+                android:id="@+id/buttonHelpRepeat_transaction_add"
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginTop="@dimen/di5dp"
+                android:layout_marginLeft="@dimen/di10dp"
+                android:background="@drawable/ic_baseline_contact_support_24"/>
+
+            <TextView
+                android:id="@+id/textViewRepeat_transaction_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di13dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxFast_transaction_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fast"
+                android:textColor="@color/colorBlack"/>
+
+            <ImageButton
+                android:id="@+id/buttonHelpFast_transaction_add"
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginTop="@dimen/di5dp"
+                android:layout_marginLeft="@dimen/di10dp"
+                android:background="@drawable/ic_baseline_contact_support_24"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

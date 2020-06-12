@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/di18dp"
+    android:paddingTop="@dimen/di10dp"
+    android:paddingRight="@dimen/di10dp"
+    android:background="@color/colorWhite"
+    tools:context=".controllers.mains.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di48dp"
+        android:text="@string/planning"
+        android:textSize="@dimen/di25dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/di15dp"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/di15dp">
+
+        <ImageButton
+            android:id="@+id/buttonBudgetImg_planning_home"
+            android:layout_width="@dimen/di35dp"
+            android:layout_height="@dimen/di35dp"
+            android:layout_marginRight="@dimen/di10dp"
+            android:layout_marginTop="@dimen/di10dp"
+            android:src="@drawable/ic_markunread_mailbox_black_24dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonBudget_planning_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/budget"
+                android:gravity="left|center"
+                android:textAllCaps="false"
+                android:textSize="@dimen/di25dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableRight="@drawable/ic_navigate_next_blue_24dp"
+                android:textColor="@color/colorLightBlue"/>
+
+            <Button
+                android:id="@+id/buttonBudgetInfo_planning_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/budget_info"
+                android:textSize="@dimen/di15dp"
+                android:gravity="left"
+                android:textAllCaps="false"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/colorDarkGray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/di15dp">
+
+        <ImageButton
+            android:id="@+id/buttonEventImg_planning_home"
+            android:layout_width="@dimen/di35dp"
+            android:layout_height="@dimen/di35dp"
+            android:layout_marginRight="@dimen/di10dp"
+            android:layout_marginTop="@dimen/di10dp"
+            android:src="@drawable/ic_event_available_black_24dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonEvent_planning_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/events"
+                android:gravity="left|center"
+                android:textAllCaps="false"
+                android:textSize="@dimen/di25dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableRight="@drawable/ic_navigate_next_blue_24dp"
+                android:textColor="@color/colorLightBlue"/>
+
+            <Button
+                android:id="@+id/buttonEventInfo_planning_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/events_info"
+                android:textSize="@dimen/di15dp"
+                android:textAllCaps="false"
+                android:gravity="left"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/colorDarkGray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/di15dp">
+
+        <ImageButton
+            android:id="@+id/buttonSavingsImg_planning_home"
+            android:layout_width="@dimen/di35dp"
+            android:layout_height="@dimen/di35dp"
+            android:layout_marginRight="@dimen/di10dp"
+            android:layout_marginTop="@dimen/di10dp"
+            android:src="@drawable/ic_library_add_black_24dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonSavings_planning_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/savings"
+                android:gravity="left|center"
+                android:textAllCaps="false"
+                android:textSize="@dimen/di25dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableRight="@drawable/ic_navigate_next_blue_24dp"
+                android:textColor="@color/colorLightBlue"/>
+
+            <Button
+                android:id="@+id/buttonSavingsInfo_planning_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/savings_info"
+                android:textSize="@dimen/di15dp"
+                android:textAllCaps="false"
+                android:gravity="left"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/colorDarkGray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/di10dp"
+    android:background="@color/colorWhite"
+    tools:context=".controllers.categories.HomeCateActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/times"
+        android:textSize="@dimen/di20dp"
+        android:gravity="center"
+        android:textColor="@color/colorLightBlue"
+        tools:ignore="SpUsage" />
+
+    <ListView
+        android:id="@+id/listViewChooseTime_time_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/di10dp"
+        android:layout_marginBottom="@dimen/di10dp"/>
+
+</LinearLayout>

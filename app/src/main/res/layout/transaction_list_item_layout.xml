@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView_Trans_book"
+        android:layout_width="@dimen/di50dp"
+        android:layout_height="@dimen/di50dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/di10dp"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="@dimen/di7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewNameCate_Trans_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/di5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/di18dp" />
+
+            <TextView
+                android:id="@+id/textViewDate_Trans_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/colorBlack"
+                android:paddingTop="@dimen/di5dp"
+                android:paddingRight="@dimen/di5dp"
+                android:textSize="@dimen/di15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewNote_Trans_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/di5dp"
+                android:textSize="@dimen/di12dp" />
+
+            <TextView
+                android:id="@+id/textViewMoney_Trans_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/colorBlue"
+                android:paddingRight="@dimen/di5dp"
+                android:paddingTop="@dimen/di5dp"
+                android:textSize="@dimen/di15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

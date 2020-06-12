@@ -1,0 +1,368 @@
+<resources>
+    <string name="app_name">FiSa</string>
+    <string name="full_app_name">Financial Savings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="error">Có lỗi xảy ra.</string>
+    <string name="notice_dialog">Thông báo</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="info_detail">Thông tin chi tiết</string>
+    <string name="see_trans">Danh sách giao dịch</string>
+    <string name="overview">Tổng quan</string>
+    <string name="expenses">Khoản thu/chi</string>
+    <string name="expensess">Khoản chi</string>
+    <string name="savinged">Khoản tiết kiệm</string>
+    <string name="empty_cate_wallet">Vui lòng nhập đầy đủ thông tin.</string>
+    <string name="empty_cate">Vui lòng chọn danh mục.</string>
+    <string name="all_wallet">Tất cả các ví</string>
+    <string name="money_use">Đã chi: </string>
+    <string name="money_rest">Còn lại: </string>
+    <string name="transfer_money">Chuyển</string>
+
+    <!--Percent-->
+    <string name="percent">Chọn % khoản thu</string>
+    <string name="percents">Phần trăm</string>
+
+    <!--Choose_time_trans_book-->
+    <string name="times">Khoảng thời gian</string>
+    <string name="time_select">Chọn thời gian</string>
+    <string name="time_display">Thời gian: </string>
+
+    <!--Login_fingerprint-->
+    <string name="title_fingerprint">Cảm biến vân tay cho FiSa</string>
+    <string name="desc_fingerprint">Vui lòng đặt ngón tay của bạn trên máy quét để xác thực danh tính của bạn</string>
+    <string name="subtitle_fingerprint">Xác thực danh tính của bạn</string>
+    <string name="use_pass">Thoát</string>
+    <string name="not_support">Thiết bị của bạn không được hỗ trợ cảm biến vân tay.</string>
+    <string name="isActive_fingerprint">Thiết bị của bạn chưa kích hoạt cảm biến vân tay.</string>
+
+    <!--Dialog_choose_year-->
+    <string name="year">Năm</string>
+    <string name="month">Tháng</string>
+
+    <!--Dialog_logout-->
+    <string name="mes_logout">Bạn chắc chắn muốn đăng xuất?</string>
+    <string name="mes_logout_info">Bạn chắc chắn muốn thoát tài khoản?</string>
+
+    <!--Dialog_change_pass-->
+    <string name="mes_change_pass">Bạn chắc chắn muốn đổi mật khẩu?</string>
+
+    <!--Toast_sign_up-->
+    <string name="empty_info">Vui lòng nhập đầy đủ thông tin.</string>
+    <string name="email_exist">Email đã được đăng ký.</string>
+    <string name="success_signup">Đăng ký tài khoản thành công.</string>
+    <string name="unsuccess_signup">Đăng ký tài khoản không thành công.</string>
+    <string name="regex_email">Email không hợp lệ.</string>
+    <string name="regex_password">Mật khẩu phải chứa ít nhất 6 kí tự.</string>
+    <string name="regex_name">Tên không hợp lệ.</string>
+
+    <!--Toast_edit_info-->
+    <string name="success_edit_info">Cập nhật thông tin thành công.</string>
+    <string name="unsuccess_edit_info">Cập nhật thông tin không thành công.</string>
+
+    <!--Dialog_edit_info-->
+    <string name="confirm_edit_info">Bạn chắc chắn muốn cập nhật thông tin?</string>
+
+    <!--Toast_login-->
+    <string name="email_incorrect">Email không chính xác.</string>
+    <string name="password_incorrect">Mật khẩu không chính xác.</string>
+
+    <!--Toast_change_pass-->
+    <string name="change_pass_success">Đổi mật khẩu thành công.</string>
+    <string name="change_pass_empty_old">Vui lòng nhập mật khẩu cũ.</string>
+    <string name="change_pass_empty_new">Vui lòng nhập mật khẩu mới.</string>
+
+    <!--Toast_wallet_add-->
+    <string name="success_wallet_add">Thêm ví thành công.</string>
+    <string name="name_exist_wallet_add">Tên ví đã tồn tại.</string>
+
+    <!--Toast_wallet_transfer-->
+    <string name="success_wallet_transfer">Chuyển tiền thành công.</string>
+    <string name="onfirm_wallet_transfer">Bạn chắc chắn muốn chuyển tiền?</string>
+    <string name="note_wallet_transfer">Chuyển tiền đến ví</string>
+
+    <!--Toast_category_add-->
+    <string name="success_cate_add">Thêm danh mục thành công.</string>
+    <string name="name_exist_cate_add">Tên danh mục đã tồn tại.</string>
+    <string name="icon_empty_cate_add">Vui lòng chọn biểu tượng.</string>
+    <string name="wallet_empty_cate_add">Vui lòng chọn ví.</string>
+
+    <!--Dialog_add_wallet-->
+    <string name="confirm_wallet_add">Bạn chắc chắn muốn thêm ví này?</string>
+
+    <!--Dialog_add_category-->
+    <string name="confirm_cate_add">Bạn chắc chắn muốn thêm danh mục này?</string>
+
+    <!--Dialog_edit_category-->
+    <string name="success_category_edit">Cập nhật danh mục thành công.</string>
+    <string name="unsuccess_category_edit">Cập nhật danh mục không thành công.</string>
+    <string name="confirm_category_edit">Bạn chắc chắn muốn cập nhật danh mục này?</string>
+
+    <!--Dialog_delete_category-->
+    <string name="mes_delete_category">Bạn chắc chắn muốn xóa danh mục này?</string>
+    <string name="delete_category_success">Xóa danh mục thành công.</string>
+
+    <!--Dialog_delete_wallet-->
+    <string name="mes_delete_wallet">Các thông tin giao dịch trong ví cá nhân này sẽ bị xóa. Bạn chắc chắn muốn xóa ví này?</string>
+    <string name="delete_wallet_success">Xóa ví thành công.</string>
+
+    <!--Dialog_edit_wallet-->
+    <string name="success_wallet_edit">Cập nhật ví thành công.</string>
+    <string name="unsuccess_wallet_edit">Cập nhật ví không thành công.</string>
+    <string name="confirm_wallet_edit">Bạn chắc chắn muốn cập nhật ví này?</string>
+
+    <!--Dialog_delete_event-->
+    <string name="mes_delete_event">Bạn chắc chắn muốn xóa sự kiện này?</string>
+    <string name="delete_event_success">Xóa sự kiện thành công.</string>
+
+    <!--Dialog_delete_savings-->
+    <string name="mes_delete_savings">Bạn chắc chắn muốn xóa tiết kiệm này?</string>
+    <string name="delete_savings_success">Xóa tiết kiệm thành công.</string>
+
+    <!--Dialog_delete_transaction-->
+    <string name="mes_delete_trans">Bạn chắc chắn muốn xóa giao dịch này?</string>
+    <string name="delete_trans_success">Xóa giao dịch thành công.</string>
+
+    <!--Dialog_delete_budgets-->
+    <string name="mes_delete_budgets">Bạn chắc chắn muốn xóa chi tiêu này?</string>
+    <string name="delete_budgets_success">Xóa chi tiêu thành công.</string>
+
+    <!--login-->
+    <string name="login">Đăng nhập</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="sign_up">Tạo tài khoản</string>
+    <string name="forgot_pass">Quên mật khẩu?</string>
+
+    <!--signup-->
+    <string name="create_account">Tạo tài khoản</string>
+    <string name="name">Tên</string>
+    <string name="choose_image">Chọn ảnh đại diện:</string>
+
+    <!--password_change-->
+    <string name="change_password">Thay đổi mật khẩu</string>
+    <string name="old_password">Mật khẩu cũ</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="change_passwordd">Thay đổi</string>
+
+    <!--edit_information-->
+    <string name="edit_information">Chỉnh sửa thông tin</string>
+    <string name="update">Cập nhật</string>
+
+    <!--forgot_password-->
+    <string name="forgot_pass_info">Nhập địa chỉ email mà bạn đăng ký để chúng tôi gửi email hướng dẫn lấy lại mật khẩu.</string>
+    <string name="send">Gửi</string>
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="empty_email">Vui lòng nhập email.</string>
+    <string name="subject">Thay đổi mật khẩu</string>
+    <string name="message">Bạn vừa yêu cầu đổi mật khẩu cho tài khoản FiSa với địa chỉ email này. Bạn có thể dùng mã này để đăng nhập và tiến hành thay đổi mật khẩu của bạn. Mã đăng nhập:</string>
+
+    <!--login_acc-->
+    <string name="exit_account">Thoát tài khoản</string>
+    <string name="hello">Xin chào!</string>
+    <string name="fingerprint">Mở khóa bằng vân tay</string>
+
+    <!--navigation-->
+    <string name="trans_book">Sổ giao dịch</string>
+    <string name="report">Báo cáo</string>
+    <string name="speed">Giao dịch nhanh</string>
+    <string name="add_trans">Thêm giao dịch</string>
+    <string name="planning">Lập kế hoạch</string>
+    <string name="personal">Cá nhân</string>
+
+    <!--transaction_fast-->
+    <string name="one_touch">Giao dịch nhanh với 1 chạm</string>
+
+    <!--transaction_book_home-->
+    <string name="filter_dialog">Bạn muốn lọc theo</string>
+
+    <!--transaction_add_trans-->
+    <string name="save">Lưu</string>
+    <string name="category">Chọn danh mục</string>
+    <string name="note">Thêm ghi chú (nếu có)</string>
+    <string name="date">Hôm nay</string>
+    <string name="wallet">Chọn ví</string>
+    <string name="event">Chọn sự kiện</string>
+    <string name="saving">Chọn tiết kiệm</string>
+    <string name="remind">Đặt nhắc nhở</string>
+    <string name="repeat">Lặp lại giao dịch này</string>
+    <string name="fast">Đánh dấu giao dịch nhanh</string>
+    <string name="confirm_add_trans">Bạn chắc chắn muốn thêm giao dịch?</string>
+    <string name="success_add_trans">Thêm giao dịch thành công.</string>
+    <string name="notice_choose_savings">(*) Khi giao dịch là tiết kiệm bạn sẽ không cần chọn ví cá nhân và ngược lại.</string>
+    <string name="notice_choose_event_savings">(*) Bạn có thể chọn cả sự kiện và tiết kiệm trong cùng một giao dịch.</string>
+
+    <!--transaction_edit-->
+    <string name="trans_edit">Chỉnh sửa giao dịch</string>
+    <string name="success_trans_edit">Cập nhật giao dịch thành công.</string>
+    <string name="confirm_trans_edit">Bạn chắc chắn muốn cập nhật giao dịch này?</string>
+
+    <!--planning-->
+    <string name="budget">Chi tiêu</string>
+    <string name="budget_info">Tạo chi tiêu cho từng nhóm thời gian hoặc cho cả ví cá nhân, giúp quản lý chi tiêu hằng ngày.</string>
+    <string name="events">Sự kiện</string>
+    <string name="events_info">Tạo một sự kiện trong ứng dụng để theo dõi việc chi tiêu trong một sự kiện có thực nào đó, ví dụ như đi du lịch cuối tuần.</string>
+    <string name="savings">Tiết kiệm</string>
+    <string name="savings_info">Tạo tiết kiệm cho mục tiêu sắp tới, giúp quản lý tiền tiết kiệm và thời gian sắp đạt được mục tiêu.</string>
+
+    <!-- event_home-->
+    <string name="eventt">Sự kiện</string>
+    <string name="no_eventt">Không có sự kiện nào</string>
+    <string name="add_eventt">Chạm nút + phía trên để thêm sự kiện</string>
+    <string name="money_eventt">Số tiền thu/chi:</string>
+
+    <!-- event_add-->
+    <string name="add_event">Thêm sự kiện</string>
+    <string name="date_end">Ngày kết thúc</string>
+    <string name="name_exist_event">Tên sự kiện đã tồn tại</string>
+    <string name="success_event_add">Thêm sự kiện thành công.</string>
+    <string name="confirm_event_add">Bạn chắc chắn muốn thêm sự kiện này?</string>
+
+    <!--event_edit-->
+    <string name="event_edit">Chỉnh sửa sự kiện</string>
+
+    <!--event_detail-->
+    <string name="tick_event">Đánh dấu hoàn thành</string>
+    <string name="untick_event">Đánh dấu chưa hoàn thành</string>
+    <string name="see_trans_event">Danh sách giao dịch</string>
+    <string name="pls_edit_detail_event">Vui lòng cập nhật lại ngày kết thúc</string>
+    <string name="success_tick_detail_event">Sự kiện đã được đánh dấu hoàn thành</string>
+    <string name="confirm_tick_detail_event">Bạn chắc chắn muốn đánh dấu sự kiện hoàn thành?</string>
+
+    <!--event_edit-->
+    <string name="success_event_edit">Cập nhật sự kiện thành công.</string>
+    <string name="confirm_event_edit">Bạn chắc chắn muốn cập nhật sự kiện này?</string>
+
+    <!--event_choose-->
+    <string name="event_choose">Chọn sự kiện</string>
+
+    <!--wallet_home-->
+    <string name="wallet_home">Ví của tôi</string>
+    <string name="trans_moneys">Chuyển tiền đến ví khác</string>
+
+    <!-- wallet_transfers-->
+    <string name="trans_money">Chuyển tiền</string>
+    <string name="from">Từ</string>
+    <string name="to">Đến</string>
+    <string name="time">Thời gian</string>
+    <string name="money">Số tiền</string>
+    <string name="chooseWallet">Vui lòng chọn ví ở mục Từ</string>
+    <string name="empty_money">Vui lòng nhập số tiền</string>
+    <string name="invalid_money">Số tiền không hợp lệ</string>
+    <string name="invalid_money_old">Số tiền trong ví không đủ cho khoản chi này</string>
+
+    <!--wallet_add-->
+    <string name="wallet_add">Thêm ví</string>
+    <string name="full_wallet">Bạn chỉ được tạo tối đa 5 ví cá nhân.</string>
+
+    <!--wallet_edit-->
+    <string name="wallet_edit">Chỉnh sửa ví</string>
+    <string name="money_now">Số tiền hiện có:</string>
+    <string name="delete_wallet">Xóa ví này</string>
+
+    <!--wallet_choose-->
+    <string name="wallet_choose">Chọn ví</string>
+
+    <!--category_add-->
+    <string name="category_add">Thêm danh mục</string>
+    <string name="category_name">Tên nhóm</string>
+    <string name="recharge_money">Khoản thu</string>
+    <string name="spend_money">Khoản chi</string>
+    <string name="symmetrical">Cân đối</string>
+
+    <!--category_home-->
+    <string name="category_home">Danh mục</string>
+
+    <!--category_icons-->
+    <string name="category_icon">Chọn biểu tượng</string>
+
+    <!--category_edit-->
+    <string name="category_edit">Chỉnh sửa danh mục</string>
+    <string name="delete_cate">Xóa danh mục này</string>
+
+    <!--category_choose-->
+    <string name="category_choose">Chọn danh mục</string>
+
+    <!--budget_home-->
+    <string name="budgett">Chi tiêu</string>
+    <string name="no_budgett">Không có chi tiêu nào</string>
+    <string name="add_budgett">Chạm nút + phía trên để thêm chi tiêu</string>
+
+    <!--budget_add-->
+    <string name="budget_add">Thêm chi tiêu</string>
+    <string name="goal">Mục tiêu</string>
+    <string name="time_apply">Thời gian áp dụng</string>
+    <string name="choosetime">Chọn thời gian</string>
+    <string name="choosetimestart">Thời gian bắt đầu</string>
+    <string name="choosetimeend">Thời gian kết thúc</string>
+    <string name="success_budgets_add">Thêm chi tiêu thành công.</string>
+    <string name="confirm_budgets_add">Bạn chắc chắn muốn thêm chi tiêu này?</string>
+    <string name="condition_time">Khoảng thời gian tối thiểu cho chi tiêu là 7 ngày.</string>
+    <string name="condition_money">Số tiền tối thiểu cho chi tiêu là 300,000 VND.</string>
+    <string name="condition_times">Ngày kết thúc phải sau ngày bắt đầu.</string>
+
+    <!--budget_edit-->
+    <string name="budget_edit">Chỉnh sửa chi tiêu</string>
+    <string name="success_budget_edit">Cập nhật chi tiêu thành công.</string>
+    <string name="confirm_budget_edit">Bạn chắc chắn muốn cập nhật chi tiêu này?</string>
+
+    <!--budget_detail-->
+    <string name="money_everyday">Số tiền nên chi mỗi ngày</string>
+    <string name="money_expected">Tổng tiền dự kiến sẽ chi</string>
+    <string name="money_reality">Số tiền thực tế đã chi mỗi ngày</string>
+
+    <!--savings_home-->
+    <string name="savings_home">Tiết kiệm</string>
+
+    <!--saving_add-->
+    <string name="saving_add">Thêm tiết kiệm</string>
+    <string name="money_savings">Số tiền đã tiết kiệm:</string>
+    <string name="success_savings_add">Thêm tiết kiệm thành công.</string>
+    <string name="confirm_savings_add">Bạn chắc chắn muốn thêm tiết kiệm này?</string>
+
+    <!--saving_edit-->
+    <string name="saving_edit">Chỉnh sửa tiết kiệm</string>
+    <string name="name_exist_savings">Tên tiết kiệm đã tồn tại</string>
+    <string name="success_savings_edit">Cập nhật tiết kiệm thành công.</string>
+    <string name="confirm_savings_edit">Bạn chắc chắn muốn cập nhật tiết kiệm này?</string>
+
+    <!--savings_choose-->
+    <string name="savings_choose">Chọn tiết kiệm</string>
+
+    <!--personal-->
+    <string name="logout">Đăng xuất</string>
+    <string name="my_wallet">&#160;&#160;&#160;&#160;&#160;Ví của tôi</string>
+    <string name="my_cate">&#160;&#160;&#160;&#160;&#160;Danh mục</string>
+    <string name="transfer">&#160;&#160;&#160;&#160;&#160;Chuyển tiền</string>
+    <string name="change_pass">&#160;&#160;&#160;&#160;&#160;Đổi mật khẩu</string>
+    <string name="edit_info">&#160;&#160;&#160;&#160;&#160;Chỉnh sửa thông tin</string>
+    <string name="icon">></string>
+
+    <string-array name="filter_array">
+        <item>Tất cả</item>
+        <item>Khoản thu</item>
+        <item>Khoản chi</item>
+    </string-array>
+
+    <string-array name="time_array">
+        <item>Tất cả</item>
+        <item>Năm</item>
+        <item>Tháng</item>
+        <item>Ngày</item>
+        <item>Tùy chỉnh</item>
+    </string-array>
+
+    <string-array name="percent_array">
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+        <item>100%</item>
+    </string-array>
+
+</resources>

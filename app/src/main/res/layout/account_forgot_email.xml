@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/di18dp"
+    android:paddingTop="@dimen/di18dp"
+    android:paddingRight="@dimen/di18dp"
+    android:background="@color/colorWhite"
+    tools:context=".controllers.mains.MainActivity">
+
+    <ImageButton
+        android:id="@+id/buttonReturn_forgot_email"
+        android:layout_width="@dimen/di35dp"
+        android:layout_height="@dimen/di35dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/di15dp"
+        android:gravity="center"
+        android:text="@string/forgot_password"
+        android:textSize="@dimen/di25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorLightBlue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/di20dp"
+        android:paddingRight="@dimen/di20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_pass_info"
+            android:textSize="@dimen/di15dp"/>
+
+        <EditText
+            android:id="@+id/editTextEmail_forgot_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:layout_marginBottom="@dimen/di10dp"
+            android:layout_marginTop="@dimen/di10dp"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:inputType="textEmailAddress"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border_radius">
+
+            <Button
+                android:id="@+id/buttonSave_forgot_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/send"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/di10dp"
+                android:layout_marginRight="@dimen/di10dp"
+                android:textSize="@dimen/di15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/di10dp"
+    android:background="@color/colorWhite"
+    tools:context=".controllers.mains.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/di10dp"
+        android:layout_marginBottom="@dimen/di10dp"
+        android:gravity="center|left">
+
+        <ImageButton
+            android:id="@+id/buttonCancel_budget_choosetime"
+            android:layout_width="@dimen/di35dp"
+            android:layout_height="@dimen/di35dp"
+            android:layout_marginRight="@dimen/di17dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di45dp"
+            android:text="@string/time_apply"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/di20dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Listview_budget_choosetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/di10dp"
+    tools:context=".controllers.mains.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/di18dp"
+        android:gravity="center|left">
+
+        <ImageButton
+            android:id="@+id/buttonCancel_Budgets_detail"
+            android:layout_width="@dimen/di25dp"
+            android:layout_height="@dimen/di25dp"
+            android:layout_marginRight="@dimen/di17dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di48dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:text="@string/info_detail"
+            android:textSize="@dimen/di20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginRight="@dimen/di15dp">
+
+            <ImageButton
+                android:id="@+id/buttonEdit_Budgets_detail"
+                android:layout_width="@dimen/di25dp"
+                android:layout_height="@dimen/di25dp"
+                android:layout_marginRight="@dimen/di25dp"
+                android:src="@drawable/ic_create_black_24dp"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <ImageButton
+                android:id="@+id/buttonDelete_Budgets_detail"
+                android:layout_width="@dimen/di25dp"
+                android:layout_height="@dimen/di25dp"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:background="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/di5dp"
+        android:background="@color/colorLightGray"
+        android:layout_marginBottom="@dimen/di10dp"
+        android:layout_marginTop="@dimen/di5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/di20dp"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:layout_marginRight="@dimen/di25dp"
+                android:background="@drawable/ic_monetization_on_black_24dp" />
+
+            <TextView
+                android:id="@+id/editTextMoney_Budgets_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="@dimen/di18dp"
+                android:textColor="@color/colorBlue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/di20dp"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:layout_marginRight="@dimen/di25dp"
+                android:background="@drawable/ic_today_black_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/editTextDate_Budgets_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="@dimen/di17dp"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/editTextDayRest_Budgets_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="@dimen/di15dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/di20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_moneyEveryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/money_everyday"
+                    android:textSize="@dimen/di15dp"/>
+
+                <TextView
+                    android:id="@+id/moneyEveryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:textSize="@dimen/di17dp"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_Expectedmoneyspent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:text="@string/money_expected"
+                    android:textSize="@dimen/di15dp" />
+
+                <TextView
+                    android:id="@+id/Expectedmoneyspent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:textSize="@dimen/di17dp"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/di20dp"
+            android:layout_marginBottom="@dimen/di20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_actualspending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:text="@string/money_reality"
+                android:textSize="@dimen/di15dp" />
+
+            <TextView
+                android:id="@+id/actualspending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/di17dp" />
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="300dp">-->
+<!---->
+<!--            <com.github.mikephil.charting.charts.CombinedChart-->
+<!--                android:id="@+id/combinedChart"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="300dp"-->
+<!--                android:layout_marginTop="20dp" />-->
+<!---->
+<!--            <com.jjoe64.graphview.GraphView-->
+<!--                android:id="@+id/graphview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"/>-->
+<!---->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/di40dp"
+            android:layout_marginLeft="@dimen/di15dp"
+            android:layout_marginTop="@dimen/di30dp"
+            android:background="@drawable/border_radius">
+
+            <Button
+                android:id="@+id/buttonSeeTrans_budgets_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/see_trans_event"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/di10dp"
+                android:layout_marginRight="@dimen/di10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="@dimen/di15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

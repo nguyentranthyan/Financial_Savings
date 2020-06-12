@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/trans_book">
+
+    <fragment
+        android:id="@+id/trans_book"
+        android:name="com.example.financial_savings.fragments.trans_book.Trans_Book_Fragment"
+        android:label="@string/trans_book"
+        tools:layout="@layout/view_splashscreen" />
+
+    <fragment
+        android:id="@+id/speed"
+        android:name="com.example.financial_savings.fragments.speed.Trans_Speed_Fragment"
+        android:label="@string/speed"
+        tools:layout="@layout/view_splashscreen" />
+
+    <fragment
+        android:id="@+id/add_trans"
+        android:name="com.example.financial_savings.fragments.add_trans.Add_Trans_Fragment"
+        tools:layout="@layout/transaction_add" />
+
+    <fragment
+        android:id="@+id/planning"
+        android:name="com.example.financial_savings.fragments.planning.Planning_Fragment"
+        android:label="@string/planning"
+        tools:layout="@layout/planning_home" />
+
+    <fragment
+        android:id="@+id/personal"
+        android:name="com.example.financial_savings.fragments.personal.Personal_Fragment"
+        android:label="@string/personal"
+        tools:layout="@layout/account_login" />
+</navigation>

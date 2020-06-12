@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/trans_book"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="@string/trans_book" />
+
+    <item
+        android:id="@+id/speed"
+        android:icon="@drawable/ic_baseline_speed_24"
+        android:title="@string/speed" />
+
+    <item
+        android:id="@+id/add_trans"
+        android:title="" />
+
+    <item
+        android:id="@+id/planning"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="@string/planning" />
+
+    <item
+        android:id="@+id/personal"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/personal" />
+
+</menu>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/di18dp"
+    android:paddingTop="@dimen/di18dp"
+    android:paddingRight="@dimen/di18dp"
+    android:background="@color/colorWhite"
+    tools:context=".controllers.mains.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/di15dp"
+        android:layout_marginTop="@dimen/di30dp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="@dimen/di25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorLightBlue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/di20dp"
+        android:paddingRight="@dimen/di20dp">
+
+        <EditText
+            android:id="@+id/editTextEmail_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/editTextPassword_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/di15dp"
+            android:hint="@string/password"
+            android:textColor="@color/colorBlack"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/di40dp"
+            android:layout_marginTop="@dimen/di15dp"
+            android:background="@drawable/border_radius">
+
+            <Button
+                android:id="@+id/buttonLogin_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="@dimen/di10dp"
+                android:layout_marginRight="@dimen/di10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="@dimen/di15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/di30dp"
+            android:layout_marginTop="@dimen/di15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonForgotPass_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/forgot_pass"
+                android:textColor="@color/colorBlue"
+                android:gravity="start|center"
+                android:textSize="@dimen/di13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end|center">
+
+                <Button
+                    android:id="@+id/buttonSignUp_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/di13dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

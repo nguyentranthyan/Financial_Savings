@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "360453056308",
+    "firebase_url": "https://financialsavings-54a0d.firebaseio.com",
+    "project_id": "financialsavings-54a0d",
+    "storage_bucket": "financialsavings-54a0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360453056308:android:125c115e0a423d56a96761",
+        "android_client_info": {
+          "package_name": "com.example.financial_savings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360453056308-nl4e8rf17msnpjm5mv8ujehtu4a9sivg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdY1QBeHmZaZ8GaxwpUeHg8UCfudmqGls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360453056308-nl4e8rf17msnpjm5mv8ujehtu4a9sivg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

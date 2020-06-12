@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.financial_savings">
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+
+        <!--Activity-->
+        <activity android:name=".controllers.accounts.LoginActivity"/>
+        <activity android:name=".controllers.accounts.SignUpActivity"/>
+        <activity android:name=".controllers.accounts.ForgotPassActivity"/>
+        <activity android:name=".controllers.accounts.ChangePassActivity"/>
+        <activity android:name=".controllers.accounts.EditInfoActivity"/>
+        <activity android:name=".controllers.accounts.LoginInfoActivity"/>
+
+        <activity android:name=".controllers.budgets.HomeBudgetActivity"/>
+        <activity android:name=".controllers.budgets.AddBudgetsActivity"/>
+        <activity android:name=".controllers.budgets.ChooseTimeActivity"/>
+        <activity android:name=".controllers.budgets.TabApplyBudgetsActivity"/>
+        <activity android:name=".controllers.budgets.TabFinishBudgetsActivity"/>
+        <activity android:name=".controllers.budgets.EditBudgetsActivity"/>
+        <activity android:name=".controllers.budgets.DetailBudgetsActivity"/>
+        <activity android:name=".controllers.budgets.SeeTransBudgetsActivity"/>
+
+        <activity android:name=".controllers.categories.HomeCateActivity"/>
+        <activity android:name=".controllers.categories.AddCateActivity"/>
+        <activity android:name=".controllers.categories.TabExpensesActivity"/>
+        <activity android:name=".controllers.categories.TabRevenueActivity"/>
+        <activity android:name=".controllers.categories.CateIconsActivity"/>
+        <activity android:name=".controllers.categories.EditCateActivity"/>
+
+        <activity android:name=".controllers.chooses.TabHostCateActivity"/>
+        <activity android:name=".controllers.chooses.TabExpensesCateActivity"/>
+        <activity android:name=".controllers.chooses.TabRevenueCateActivity"/>
+        <activity android:name=".controllers.chooses.ChooseWalletActivity"/>
+        <activity android:name=".controllers.chooses.ChooseEventActivity"/>
+        <activity android:name=".controllers.chooses.ChooseSavingsActivity"/>
+
+        <activity android:name=".controllers.events.HomeEventActivity"/>
+        <activity android:name=".controllers.events.AddEventActivity"/>
+        <activity android:name=".controllers.events.EditEventActivity"/>
+        <activity android:name=".controllers.events.DetailEventActivity"/>
+        <activity android:name=".controllers.events.SeeTransEventActivity"/>
+        <activity android:name=".controllers.events.TabApplyEventActivity"/>
+        <activity android:name=".controllers.events.TabFinishEventActivity"/>
+
+        <activity android:name=".controllers.mains.HomeActivity"/>
+
+        <activity android:name=".controllers.savings.HomeSavingsActivity"/>
+        <activity android:name=".controllers.savings.AddSavingsActivity"/>
+        <activity android:name=".controllers.savings.TabApplySavingsActivity"/>
+        <activity android:name=".controllers.savings.TabFinishSavingsActivity"/>
+        <activity android:name=".controllers.savings.DetailSavingsActivity"/>
+        <activity android:name=".controllers.savings.EditSavingsActivity"/>
+        <activity android:name=".controllers.savings.SeeTransSavingsActivity"/>
+
+        <activity android:name=".controllers.transactions.DetailTransactionActivity"/>
+        <activity android:name=".controllers.transactions.EditTransactionActivity"/>
+        <activity android:name=".controllers.transactions.AddTransactionActivity"/>
+
+        <activity android:name=".controllers.wallets.HomeWalletActivity"/>
+        <activity android:name=".controllers.wallets.AddWalletActivity"/>
+        <activity android:name=".controllers.wallets.EditWalletActivity"/>
+        <activity android:name=".controllers.wallets.TransferWalletActivity"/>
+
+        <activity
+            android:name=".controllers.mains.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

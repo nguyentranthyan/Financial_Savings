@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/di10dp"
+    tools:context=".controllers.mains.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/di18dp"
+        android:gravity="center|left">
+
+        <ImageButton
+            android:id="@+id/buttonCancel_event_edit"
+            android:layout_width="@dimen/di25dp"
+            android:layout_height="@dimen/di25dp"
+            android:layout_marginRight="@dimen/di17dp"
+            android:src="@drawable/ic_close_black_24dp"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_edit"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/di20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/buttonSave_event_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="@string/save"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/di18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/di10dp"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:id="@+id/buttonNote"
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:layout_marginTop="@dimen/di12dp"
+                android:layout_marginRight="@dimen/di17dp"
+                android:background="@drawable/ic_event_note_black_24dp" />
+
+            <EditText
+                android:id="@+id/editTextName_event_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/di15dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/di10dp">
+
+            <ImageButton
+                android:id="@+id/buttonDate"
+                android:layout_width="@dimen/di24dp"
+                android:layout_height="@dimen/di24dp"
+                android:layout_marginLeft="@dimen/di8dp"
+                android:layout_marginTop="@dimen/di12dp"
+                android:layout_marginRight="@dimen/di17dp"
+                android:background="@drawable/ic_today_black_24dp" />
+
+            <EditText
+                android:id="@+id/editTextDate_event_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/di15dp"
+                android:ems="10"
+                android:hint="@string/date_end"
+                android:focusable="false"
+                android:inputType="none"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
